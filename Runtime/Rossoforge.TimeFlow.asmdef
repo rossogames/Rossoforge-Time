@@ -1,8 +1,9 @@
 {
-    "name": "Rossoforge.Time",
-    "rootNamespace": "Rossoforge.Time",
+    "name": "Rossoforge.TimeFlow",
+    "rootNamespace": "Rossoforge.TimeFlow",
     "references": [
-        "Rossoforge.Core"
+        "Rossoforge.Core",
+        "Rossoforge.Services"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
