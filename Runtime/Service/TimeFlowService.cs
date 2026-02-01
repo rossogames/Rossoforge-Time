@@ -21,7 +21,7 @@ namespace Rossoforge.TimeFlow.Service
             _eventService = ServiceLocator.Get<IEventService>();
         }
 
-        public virtual DateTime GetCurrentTime()
+        public virtual DateTime GetCurrentUtcTime()
         {
             return DateTime.UtcNow;
         }
