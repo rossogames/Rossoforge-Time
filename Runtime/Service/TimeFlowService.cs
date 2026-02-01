@@ -11,11 +11,13 @@ namespace Rossoforge.TimeFlow.Service
     {
         private IEventService _eventService;
         private float _previousTimeScale = 1f;
+        private float _baseFixedDeltaTime;
 
         public bool IsPaused { get; private set; }
 
         public void Initialize()
         {
+            _baseFixedDeltaTime = Time.fixedDeltaTime;
             _eventService = ServiceLocator.Get<IEventService>();
         }
 
@@ -54,6 +56,7 @@ namespace Rossoforge.TimeFlow.Service
                 timeScale = 0f;
 
             Time.timeScale = timeScale;
+            Time.fixedDeltaTime = _baseFixedDeltaTime * timeScale;
         }
     }
 }
