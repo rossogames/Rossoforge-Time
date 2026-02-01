@@ -1,0 +1,18 @@
+{
+  "name": "com.rossogames.rossoforge-time",
+  "version": "1.4.0",
+  "displayName": "Rossoforge-Time",
+  "description": "A centralized and extensible time service for Unity that manages time scale, pause and resume, and provides access to the current date/time.",
+  "unity": "2022.0",
+  "author": {
+    "name": "Agustin Rosso",
+    "url": "https://www.linkedin.com/in/rossoagustin/"
+  },
+  "keywords": [
+    "time",
+    "pause",
+    "timescale",
+    "rossogames",
+    "rossoforge"
+  ]
+}
